@@ -1,0 +1,27 @@
+@mixin centrar-flex{
+    display: flex;
+    justify-content: center;
+}
+@mixin espacio($margin: 0 auto, $padding: 20px) {
+    margin: $margin;
+    padding: $padding;
+}
+@mixin estilo-footer($bg-color, $text-color, $padding: 20px) {
+    background-color: $bg-color;
+    color: $text-color;
+    text-align: center;
+    padding: $padding;
+  }
+  @mixin seccion-grid($padding: 2rem, $columns: 1fr, $gap: 1rem) {
+    padding: $padding;
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+}
+@mixin alinear-texto($alineacion: left) {
+    text-align: $alineacion;
+}
+
+  
+  
+  

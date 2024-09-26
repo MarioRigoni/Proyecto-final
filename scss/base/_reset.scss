@@ -1,0 +1,16 @@
+// variables
+
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 90px;
+    background-image: url('/img/Fondo-body.jpg');
+}
