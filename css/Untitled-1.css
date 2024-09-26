@@ -1,0 +1,236 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 90px;
+    background-color: antiquewhite;
+}
+
+/* Estilos Generales */
+
+.tomato-bg{
+    background-color: #2F302D;
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 90px;
+    position: fixed;
+}
+
+h1{
+    font-family: "roboto";
+}
+
+h2{
+    font-family: "roboto";
+}
+
+header img.logo {
+    width: 100px;
+}
+
+header .navbar .nav-link{
+    color: #2F302D
+}
+
+header .navbar-nav .nav-item{
+    margin-right: 40px;
+}
+
+/* Estilos del menú hamburguesa */
+
+.navbar-toggler{
+    background-color: #F0F3EE;;
+    margin-right: 50px;
+}
+
+.navbar-nav .nav-item{
+    margin-bottom: 0;
+}
+
+.navbar-nav .nav-link{
+    padding: 1px 0;
+}
+
+.navbar-collapse{
+    position: fixed;
+    top: 90px;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Le puse mediaqueri para que cuando pasó a decktop el menu de navegacion no se desordene */
+
+@media screen and (min-width: 1024px){
+    .navbar-collapse{
+        position: relative;
+        top: auto;
+        background-color: transparent;
+    }
+
+    header .navbar .nav-link{
+        color: white
+    }
+}
+
+main.main-home h1{
+    margin-top: 100px;
+}
+
+.main-home{
+    text-align: center;
+}
+
+.main-home p{
+    padding: 30px;
+}
+.main-home img{
+    width: 455px;
+}
+footer{
+    background-color: #2b2b2b;
+    color: #D8CEBB;
+    text-align: center;
+}
+
+/* Estilos para el main-sobrenosotros*/
+
+.main-sobrenosotros{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+.main-sobrenosotros h1, .main-sobrenosotros h2, .main-sobrenosotros p{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.image-gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+}
+.image-gallery img {
+    width: 70%; 
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+/* Estilos para version movile */
+
+@media screen and (min-width: 600px)  {
+    .main-sobrenosotros {
+        padding: 2rem;
+    }
+
+    .image-gallery img {
+        max-width: 350px; 
+    }
+}
+
+/* Estilos para version tablet*/
+
+@media screen and (min-width: 600px){
+    .image-gallery{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        gap: 1rem;
+    }
+
+    .image-gallery img{
+        width: 95%;
+        max-width: none;
+    }
+
+    /* oculta la imagen tres en version tablet*/
+
+    .image-gallery img:nth-child(3) {
+        display: none; 
+    }
+}
+
+/* Estilos para desktop. Acá aplique algunas propiedades que todavía no las vimos en clase*/
+
+@media screen and (min-width: 1024px) {
+    .main-sobrenostros {
+        padding: 2rem 6rem;
+        grid-template-columns: 1.5fr repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .image-gallery img {
+        width: 95%; 
+        max-width: none; 
+    }
+
+    /* vuelve aparecer la imagen tres en version desktop*/
+
+    .image-gallery img:nth-child(3) {
+        display: block; 
+    }
+}
+
+
+/* Estilos para el main del index servicios*/
+
+.main-servicios{
+    text-align: center;
+}
+main.main-servicios h1{
+    margin-top: 50px;
+}
+.main-servicios h1{
+    margin-bottom: 20px;
+}
+.main-servicios p{
+    padding: 30px;
+ 
+/* Estilos para el main del index turnos*/
+
+.main-turnos{
+    text-align: center;
+    padding: 50px;
+}
+.main-turnos h2{
+    padding: 50px;
+}
+
+.main-turnos h1{
+    margin-top: 70px;
+}
+
+.main-turnos img{
+    width: 20%;
+}
+
+/* Estilos para el main del index contactos*/
+
+.main-contactos{
+    text-align: center;
+    padding: 50px;
+}
+
+.main-contactos h1{
+    margin-top: 50px;
+}
+
+.main-contactos form{
+    margin-top: 50px;
+}
