@@ -1,0 +1,83 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+
+header{
+    background-color: #D8CEBB;
+    text-align: center;
+}
+header img{
+    width: 15%;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #2b2b2b;
+}
+.main-home{
+    text-align: center;
+}
+.main-home h1{
+    margin-bottom: 20px;
+}
+.main-home p{
+    padding: 30px;
+}
+.main-home img{
+    width: 500px;
+}
+footer{
+    background-color: #2b2b2b;
+    color: #D8CEBB;
+    text-align: center;
+}
+.main-sobrenostros{
+    text-align: center;
+}
+.main-sobrenostros h1{
+    margin-bottom: 20px;
+}
+.main-sobrenostros p{
+    padding: 30px;
+}
+.main-sobrenostros h2{
+    padding: 10px;
+}
+.main-sobrenostros img{
+    width: 500px;
+}
+.main-servicios{
+    text-align: center;
+}
+.main-servicios h1{
+    margin-bottom: 20px;
+}
+.main-servicios p{
+    padding: 30px;
+}
+.main-turnos{
+    text-align: center;
+    padding: 50px;
+}
+.main-turnos h2{
+    padding: 50px;
+}
+.main-contactos{
+    text-align: center;
+    padding: 50px;
+}
+.main-turnos img{
+    width: 20%;
+}

@@ -64,4 +64,6 @@
 
 footer {
     @include estilo-footer($primary-color, $secondary-color);
+    width: 100vw;
+    padding-top: 100px;
 }
